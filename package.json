@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "docs.js",
+  "homepage": "https://diogoson11.github.io/ana-pereira/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +17,8 @@
     "express": "^4.16.2",
     "owl.carousel": "^2.3.4",
     "swiper": "^8.4.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
